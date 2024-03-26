@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+int print_37(void);
 int print_d(va_list args);
 int print_i(va_list args);
 int putss(char *c);
