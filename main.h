@@ -18,6 +18,8 @@ typedef struct print_type
 	int (*f)(va_list args);
 } print_t;
 
+int print_oct(va_list val);
+int print_unsigned(va_list args);
 int print_37(void);
 int print_d(va_list args);
 int print_i(va_list args);

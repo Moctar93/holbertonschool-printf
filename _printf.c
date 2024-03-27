@@ -44,6 +44,16 @@ int _printf(const char *format, ...)
 			print_i(list_of_args);
 			i++;
 		}
+		else if (format[i + 1] == 'u')
+                {
+                        print_unsigned(list_of_args);
+                        i++;
+                }
+		 else if (format[i + 1] == 'o')
+                {
+                        print_oct(list_of_args);
+                        i++;
+                }
 		count += 1;
 	}
 	va_end(list_of_args);
