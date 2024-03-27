@@ -39,6 +39,16 @@ int _printf(const char *format, ...)
 		{
 			putchr('%');
 		}
+		else if (format[i + 1] == 'i')
+		{
+			print_i(list_of_args);
+                        i++;
+		}
+		else if (format[i + 1] == 'd')
+		{
+			print_d(list_of_args);
+			i++;
+		}
 		count += 1;
 	}
 
