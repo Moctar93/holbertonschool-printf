@@ -18,6 +18,17 @@ typedef struct print_type
 	int (*f)(va_list args);
 } print_t;
 
+int print_s(va_list val);
+int _strlen(char *s);
+int print_exc_string(va_list val);
+int print_bin(va_list val);
+int print_rot13(va_list args);
+int print_revs(va_list args);
+int print_hex_extra(unsigned long int num);
+int print_hex(va_list val);
+int print_pointer(va_list val);
+int print_HEX_extra(unsigned int num);
+int print_HEX(va_list val);
 int print_oct(va_list val);
 int print_unsigned(va_list args);
 int print_37(void);

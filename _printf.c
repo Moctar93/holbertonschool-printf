@@ -54,6 +54,33 @@ int _printf(const char *format, ...)
                         print_oct(list_of_args);
                         i++;
                 }
+		 else if (format[i + 1] == 'X')
+                {
+                        print_HEX(list_of_args);
+                        i++;
+                }
+		else if (format[i + 1] == 'X')
+                {
+                         unsigned int num  = va_arg(list_of_args, unsigned int);
+			 print_HEX_extra(num);
+			 i++;
+                }
+		else if (format[i + 1] == 'x')
+                {
+                        print_hex(list_of_args);
+                        i++;
+		}
+		 else if (format[i + 1] == 'x')
+                {
+			unsigned long int num = va_arg(list_of_args, unsigned long int);
+			print_hex_extra(num);
+                        i++;
+                }
+		 else if (format[i + 1] == 'p')
+                {
+                        print_pointer(list_of_args);
+                        i++;
+		}
 		count += 1;
 	}
 	va_end(list_of_args);
