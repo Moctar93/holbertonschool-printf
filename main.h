@@ -12,13 +12,15 @@
  * @f: function to execute print
  */
 
-typedef struct print_type
+typedef struct format
 {
-	char *type_arg;
-	int (*f)(va_list args);
-} print_t;
+	char *ph;
+	int (*function)();
+} convert;
 
+int print_c(va_list val);
 int print_s(va_list val);
+int _strlen(char *s);
 int _strlen(char *s);
 int print_exc_string(va_list val);
 int print_bin(va_list val);
