@@ -5,11 +5,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+
 /**
- * struct print_type - struct for printer functions
- * @type_arg: format organizer
+ * struct format - converter for printf
+ * @ph: type char pointer of the specifier
+ * @function: function for the conversion specifier
  *
- * @f: function to execute print
  */
 
 typedef struct format
@@ -22,6 +23,7 @@ int print_c(va_list val);
 int print_s(va_list val);
 int _strlen(char *s);
 int _strlen(char *s);
+
 int print_exc_string(va_list val);
 int print_bin(va_list val);
 int print_rot13(va_list args);
