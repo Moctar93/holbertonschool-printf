@@ -11,7 +11,7 @@ int print_rot13(va_list args)
 	int k = 0;
 	char *s = va_arg(args, char*);
 	char al[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
-	char bl[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
+	char bl[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKL"};
 
 	if (s == NULL)
 		s = "(null)";
